@@ -14,6 +14,8 @@ To run the project, you will need:
 
 > The project runs on HTTPS, because OIDC defaults to using HTTPS-only cookies, and it's generally good practice. The SDK should automatically use the ASP.NET Core development certificate; if your development certificate isn't working you can find more info [here](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-3.1&tabs=visual-studio#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos) to get it working.
 
+Open the solution in Visual Studio, set your Startup project as `Hesa.Portal` and press Start. NPM packages will need to restore the first time before it will run.
+
 ## Design and Approach
 
 ### Target and Packages

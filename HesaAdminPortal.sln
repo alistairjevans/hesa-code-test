@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hesa.Portal", "src\Hesa.Portal\Hesa.Portal.csproj", "{4C2C3DBD-5EB7-44F2-AAA4-219E0B054423}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hesa.Data", "src\Hesa.Data\Hesa.Data.csproj", "{3EAF603C-2B59-424A-BDFE-944B218A68C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{30DDC8E4-0A83-4DBA-9107-F683371AD7F8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hesa.Logic", "src\Hesa.Logic\Hesa.Logic.csproj", "{DAE5A82C-46C3-4905-A9CA-0A36767F473A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3CDA367-4B11-4BAC-9DDD-DF243A0C1F3E}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C88F3491-2790-4F88-B2D7-EEAAAEF3F818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hesa.Logic.Tests", "tests\Hesa.Logic.Tests\Hesa.Logic.Tests.csproj", "{C25CA180-E2BD-4CE6-A960-B877F1E49C5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C2C3DBD-5EB7-44F2-AAA4-219E0B054423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2C3DBD-5EB7-44F2-AAA4-219E0B054423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2C3DBD-5EB7-44F2-AAA4-219E0B054423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2C3DBD-5EB7-44F2-AAA4-219E0B054423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EAF603C-2B59-424A-BDFE-944B218A68C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EAF603C-2B59-424A-BDFE-944B218A68C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EAF603C-2B59-424A-BDFE-944B218A68C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EAF603C-2B59-424A-BDFE-944B218A68C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAE5A82C-46C3-4905-A9CA-0A36767F473A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE5A82C-46C3-4905-A9CA-0A36767F473A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE5A82C-46C3-4905-A9CA-0A36767F473A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE5A82C-46C3-4905-A9CA-0A36767F473A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C25CA180-E2BD-4CE6-A960-B877F1E49C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25CA180-E2BD-4CE6-A960-B877F1E49C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25CA180-E2BD-4CE6-A960-B877F1E49C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25CA180-E2BD-4CE6-A960-B877F1E49C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C2C3DBD-5EB7-44F2-AAA4-219E0B054423} = {F3CDA367-4B11-4BAC-9DDD-DF243A0C1F3E}
+		{3EAF603C-2B59-424A-BDFE-944B218A68C2} = {F3CDA367-4B11-4BAC-9DDD-DF243A0C1F3E}
+		{DAE5A82C-46C3-4905-A9CA-0A36767F473A} = {F3CDA367-4B11-4BAC-9DDD-DF243A0C1F3E}
+		{C25CA180-E2BD-4CE6-A960-B877F1E49C5E} = {C88F3491-2790-4F88-B2D7-EEAAAEF3F818}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEEDB161-308F-4A4B-B53B-86AA989601A3}
+	EndGlobalSection
+EndGlobal

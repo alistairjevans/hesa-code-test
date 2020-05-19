@@ -1,0 +1,51 @@
+
+# All files - enforce 4 spaces
+[*.cs]
+indent_style = space
+indent_size = 4
+
+# Force VS to recommend underscore at the start of created private fields.
+[*.cs]
+dotnet_naming_rule.private_members_with_underscore.symbols  = private_fields
+dotnet_naming_rule.private_members_with_underscore.style    = prefix_underscore
+dotnet_naming_rule.private_members_with_underscore.severity = suggestion
+
+dotnet_naming_symbols.private_fields.applicable_kinds           = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+
+dotnet_naming_style.prefix_underscore.capitalization = camel_case
+dotnet_naming_style.prefix_underscore.required_prefix = _
+
+
+# SA1101: Prefix local calls with this - We don't want this rule; we use underscores on member names instead.
+dotnet_diagnostic.SA1101.severity = none
+
+# CA2007: Consider calling ConfigureAwait on the awaited task - Don't need this; we're in control of everything, and it's a web app
+dotnet_diagnostic.CA2007.severity = none
+
+# SA1309: Field names should not begin with underscore
+dotnet_diagnostic.SA1309.severity = none
+
+# SA1200: Using directives should be placed correctly
+dotnet_diagnostic.SA1200.severity = none
+
+# SA1204: Static elements should appear before instance elements
+dotnet_diagnostic.SA1204.severity = none
+
+# SA1633: File should have header
+dotnet_diagnostic.SA1633.severity = none
+
+# CA1034: Nested types should not be visible - Conflicts with the typical ASP.NET Razor Pages style.
+dotnet_diagnostic.CA1034.severity = none
+
+# CA1303: Do not pass literals as localized parameters - ignore for now; in a proper project we would have the resource files needed.
+dotnet_diagnostic.CA1303.severity = none
+
+# CA1054: Uri parameters should not be strings - not too worried for this demo.
+dotnet_diagnostic.CA1054.severity = none
+
+# CA1056: Uri properties should not be strings - not too worried for this demo.
+dotnet_diagnostic.CA1056.severity = none
+
+# CA1824: Add NeutralResourcesLanguage attribute - JSON only, no need for neutral resources.
+dotnet_diagnostic.CA1824.severity = none
